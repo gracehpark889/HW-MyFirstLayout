@@ -1,0 +1,256 @@
+.all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+
+h1 {
+    font-family: 'Amiri', serif;
+    font-size: 27px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.header {
+    margin: 50px;
+    display:flex;
+    align-items:center;
+}
+
+.name {
+    flex-grow:2;
+}
+
+.name h1 {
+    font-size: 27px;
+    font-family: 'Amiri',serif;
+    font-weight: normal;
+}
+
+.menu li {
+    display: inline;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.menu li:hover {
+    color:#BD8D69;
+    font-weight:700;
+}
+
+.burger_image {
+    width:40px;
+    display:none;
+    position:relative;
+}
+.burger_image2 {
+    display:none;
+}
+
+
+@media only screen and (max-width:770px) {
+    .header {
+        margin: 50px;
+        display:flex;
+        align-items:center;
+    }
+    .menu {
+        display:none;
+    }
+    .burger_image {
+        width: 40px;
+        display: inline-block;
+        z-index:1;
+    }
+    .burger_image:hover {
+        z-index: -2;
+    }
+    .burger_image2 {
+        width: 40px;
+        position: absolute;
+        top: 70px;
+        right: 58px;
+        display: inline-block;
+        z-index:-1;
+    }
+  
+}
+
+.left{
+    width: 45%;
+    vertical-align: top;
+    margin-right: 20px;
+    /* background-color:yellow; */
+    position: relative;
+}
+
+.profile-pic {
+  width:520px;
+  z-index: 4;
+  display: block;
+  margin: 0 auto;
+}
+
+.background {
+    position: relative;
+}
+.background h1{
+    top: 461px;
+    font-size: 200px;
+    opacity: 0.30;
+    color: #E2D9C9;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 100px;
+    position: absolute;
+    left: 186px;
+    font-size: 122px;
+    z-index: 1;
+}
+
+.right {
+    width: 50%;
+    vertical-align: top;
+    /* background-color: pink; */
+}
+
+
+.about h1{
+    font-size: 30px;
+}
+
+.about h2{
+    font-weight:normal;
+    font-size: 20px;
+    font-family:'Amiri', serif;
+}
+
+ul {
+   list-style: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:15px;
+   line-height: 25px;
+   padding: 0px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height:20px;
+}
+
+.below_about {
+    text-align: center;
+    margin-top: 80px;
+}
+.btn {
+    border: solid 1px;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.resume {
+    color:black;
+}
+
+.resume:hover {
+    background-color:#BD8D69;
+    color:white;
+}
+
+.social_links {
+    display: flex;
+    margin-top: 85px;
+}
+
+.filler {
+    flex-grow:2;
+}
+
+.s {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+  }
+
+  .s:hover  {
+      padding: 10px;
+      background-color: #F8F1E2;
+  }
+.profile-pic_Hidden {
+  display: none;
+}
+
+.left_contain {
+        position: relative;
+}
+.left_contain h1 {
+        display: block;
+        font-size: 160px;
+        position: relative;
+        top: -45px;
+        line-height: 118px;
+        margin-top: 0;
+        margin: 0 auto;
+        max-width: 270px;
+        z-index: -5;
+        color: #BD8D69;
+        opacity: 0.3;
+    }
+
+.left_contain_Hidden h1 {
+        display: none;
+        font-size: 160px;
+        position: relative;
+        top: -45px;
+        line-height: 118px;
+        margin-top: 0;
+        margin: 0 auto;
+        max-width: 270px;
+        z-index: -5;
+        color: #BD8D69;
+        opacity: 0.3;
+    }
+
+  @media only screen and (max-width: 1100px) {
+    .right {
+        width: 100%;
+        vertical-align: top;
+        height:50px;
+    }
+
+    .left{
+        width: 50%;
+        vertical-align: top;
+        margin-right: 20px;
+        position: relative;
+        display: none;
+    }
+    .profile-pic_Hidden {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .left_contain_Hidden h1 {
+        display: block;
+        font-size: 160px;
+        position: relative;
+        top: -45px;
+        line-height: 118px;
+        margin-top: 0;
+        margin: 0 auto;
+        max-width: 270px;
+        z-index: -5;
+        color: #BD8D69;
+        opacity: 0.3;
+    }
+  }
